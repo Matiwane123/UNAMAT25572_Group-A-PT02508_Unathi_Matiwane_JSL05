@@ -8,7 +8,9 @@ This project demonstrates my skills in DOM manipulation, modular JavaScript, res
 ## 🛠 Technologies Used
 
 • HTML5 – semantic structure and layout
+
 • CSS3 – styling, responsiveness, and UI design
+
 • JavaScript (ES6+) – dynamic rendering, local storage handling, and modal interactions.
 
 ## ✨ Key Objectives
