@@ -1,22 +1,28 @@
-# JSL05 Project Brief: Task Board with Local Storage Persistence and Task Creation
+📌 Kanban Task Management Board
 
-## Prerequisite
+## 📖 Project Description
 
-1. Before starting this challenge, ensure that you have **correctly populated your DOM elements** as per the solution in JSL04. Additionally, ensure that clicking a task should **open the modal with the relevant task details** as required in the previous challenge.
-2. **Check the project user stories in your student dashboard**, make sure you understand what is required for each feature.
+This project is a Kanban-style task management system built with HTML, CSS, and JavaScript. It allows users to create, organize, and persist tasks across three categories: To Do, Doing, and Done. Tasks are stored in local storage, ensuring they remain available even after refreshing the page or reopening the application. The board includes a modal for adding new tasks, and column headers update dynamically to reflect the number of tasks in each category.
+This project demonstrates my skills in DOM manipulation, modular JavaScript, responsive design, and local storage persistence. It is part of my journey toward becoming a professional developer, and I’ve personalized the structure and styling to reflect my standards.
 
-## Overview
+## 🛠 Technologies Used
 
-In this project, you will implement a task management system where **tasks are persisted in local storage**, ensuring that tasks remain available even after refreshing the page or reopening the application. Users will be able to **add new tasks**, with the task details being **stored in local storage** and displayed in the appropriate **columns** ("To Do", "Doing", "Done"). The application should also include an **Add Task** modal for creating new tasks.
+• HTML5 – semantic structure and layout
+• CSS3 – styling, responsiveness, and UI design
+• JavaScript (ES6+) – dynamic rendering, local storage handling, and modal interactions.
 
-## Key Objectives
+##🛠 Technologies Used
+• HTML5 – semantic structure and layout
+• CSS3 – styling, responsiveness, and UI design
+• JavaScript (ES6+) – dynamic rendering, local storage handling, and modal interactions
 
-### Persistent Task Storage & Retrieval
+## ✨ Key Objectives
 
-- **Save tasks to local storage**: On page load, the application should **load tasks** from local storage so that the latest task list is available, even after a refresh.
-- Ensure that **tasks are saved in local storage** every time a new task is added so that tasks persist after the page refreshes.
-- **Load tasks** from local storage on startup, so users can see the latest tasks without manually re-entering them.
-- Tasks should be categorized correctly into their respective columns (e.g., "To Do", "Doing", "Done") based on their **status** when loaded from local storage.
+• Persistent Storage: Tasks are saved to local storage and reloaded on startup.
+• Categorized Columns: Tasks are displayed in the correct column based on status.
+• Accurate Counts: Column headers update automatically to show the number of tasks in each category.
+• Responsive Design: Works seamlessly on both desktop and mobile.
+• Styled UI: Blue “Add New Task” button and styled task cards for clarity and consistency.
 
 ### Task Creation & Modal Interaction
 
@@ -39,6 +45,6 @@ In this project, you will implement a task management system where **tasks are p
 - Use **descriptive variable and function names** to ensure the code is clear and easy to maintain.
 - Include **JSDoc comments** for every major function and module to describe their functionality, parameters, and return values.
 
-## Expected Outcome
+## ✅ Expected Outcome
 
-A fully functional task management system where tasks are dynamically loaded from **local storage**, tasks can be **added through a modal**, and the application **remains consistent** after refreshing the page. The code will be modular, well-documented, and easy to maintain, following best practices for JavaScript development.
+A fully functional, responsive Kanban board that demonstrates my ability to combine JavaScript logic, DOM manipulation, and local storage into a polished project. This project is uniquely mine, reflecting both my technical growth and my attention to detail.
