@@ -11,17 +11,16 @@ This project demonstrates my skills in DOM manipulation, modular JavaScript, res
 • CSS3 – styling, responsiveness, and UI design
 • JavaScript (ES6+) – dynamic rendering, local storage handling, and modal interactions.
 
-##🛠 Technologies Used
-• HTML5 – semantic structure and layout
-• CSS3 – styling, responsiveness, and UI design
-• JavaScript (ES6+) – dynamic rendering, local storage handling, and modal interactions
-
 ## ✨ Key Objectives
 
 • Persistent Storage: Tasks are saved to local storage and reloaded on startup.
+
 • Categorized Columns: Tasks are displayed in the correct column based on status.
+
 • Accurate Counts: Column headers update automatically to show the number of tasks in each category.
+
 • Responsive Design: Works seamlessly on both desktop and mobile.
+
 • Styled UI: Blue “Add New Task” button and styled task cards for clarity and consistency.
 
 ### Task Creation & Modal Interaction
