@@ -14,6 +14,7 @@
     <title>Kanban Task Management</title>
   </head>
   <body>
+    <!-- Sidebar -->
     <nav class="side-bar" id="side-bar-div">
       <div id="side-logo-div">
         <img id="logo" src="./assets/logo-light.svg" alt="logo-light" />
@@ -22,8 +23,19 @@
         <h4 id="headline-sidepanel">ALL BOARDS (1)</h4>
         <button class="board-btn">Launch Career</button>
       </div>
+
+      <!-- ✅ Sidebar footer with buttons -->
+      <div class="sidebar-footer">
+        <button id="toggleTheme" class="theme-toggle-btn">
+          🌞Dark Mode 🌚
+        </button>
+        <button id="toggleSidebar" class="sidebar-toggle-btn">
+          🚫Hide Sidebar
+        </button>
+      </div>
     </nav>
 
+    <!-- Layout -->
     <div id="layout">
       <header id="header" class="sticky-header">
         <div class="header-name-div">
@@ -36,6 +48,7 @@
             Launch Career
           </h2>
         </div>
+
         <!-- ✅ Add Task button -->
         <button id="add-new-task-btn" class="primary-btn">
           + Add New Task
@@ -44,6 +57,7 @@
 
       <div class="container">
         <main class="card-column-main">
+          <!-- TODO Column -->
           <div class="column-div" data-status="todo">
             <div class="column-head-div">
               <span class="dot"></span>
@@ -57,6 +71,8 @@
               <div class="task-div">Crush Frameworks🖼️</div>
             </div>
           </div>
+
+          <!-- DOING Column -->
           <div class="column-div" data-status="doing">
             <div class="column-head-div">
               <span class="dot"></span>
@@ -68,6 +84,8 @@
               <div class="task-div">Never Give Up 🏆</div>
             </div>
           </div>
+
+          <!-- DONE Column -->
           <div class="column-div" data-status="done">
             <div class="column-head-div">
               <span class="dot"></span>

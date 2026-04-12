@@ -168,3 +168,19 @@ function updateColumnCounts() {
   document.querySelector('[data-status="done"] .columnHeader').textContent =
     `DONE (${counts.done})`;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("toggleSidebar");
+  const sidebar = document.getElementById("side-bar-div");
+
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("hidden");
+
+    // Update button text
+    if (sidebar.classList.contains("hidden")) {
+      toggleBtn.textContent = "☰ Show Sidebar";
+    } else {
+      toggleBtn.textContent = "☰ Hide Sidebar";
+    }
+  });
+});

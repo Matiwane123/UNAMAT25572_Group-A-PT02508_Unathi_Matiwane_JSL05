@@ -386,3 +386,60 @@ h2 {
 .primary-btn:hover {
   background-color: #0056b3; /* darker blue on hover */
 }
+
+/* Sidebar footer */
+.sidebar-footer {
+  margin-top: auto; /* Pushes button to bottom */
+  padding: 16px;
+  text-align: center;
+}
+
+/* Toggle button styling */
+.sidebar-toggle-btn .theme-toggle-btn {
+  background: none;
+  border: 1px solid var(--secondary-font-color);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--primary-font-color);
+  transition: background 0.2s ease;
+}
+
+.sidebar-toggle-btn:hover .theme-toggle-btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Sidebar hidden state */
+#side-bar-div.hidden {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* ========================
+   Dark Mode Theme
+======================== */
+body.dark-mode {
+  --primary-color: #000000;
+  --secondary-color: #121212;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #bbbbbb;
+  --primary-box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+}
+
+body.dark-mode .task-div {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .side-bar {
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+}
