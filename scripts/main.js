@@ -184,3 +184,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const toggleThemeBtn = document.getElementById("toggleTheme");
+
+// Theme toggle
+toggleThemeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  // Change button text/icon depending on mode
+  if (document.body.classList.contains("dark-mode")) {
+    toggleThemeBtn.textContent = "☀️ Light Mode";
+  } else {
+    toggleThemeBtn.textContent = "🌑 Dark Mode";
+  }
+});

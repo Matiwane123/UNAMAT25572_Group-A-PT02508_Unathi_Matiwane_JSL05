@@ -29,3 +29,30 @@ export function addNewTask() {
   resetForm();
   overlay.close();
 }
+
+// Load tasks on startup
+export function initTasks() {
+  const tasks = loadTasksFromStorage();
+  clearExistingTasks();
+  renderTasks(tasks);
+}
+
+// Hook up events
+export function setupTaskEvents() {
+  const addTaskBtn = document.getElementById("add-new-task-btn");
+  const newTaskModal = document.querySelector(".modal-overlay");
+  const cancelAddBtn = document.getElementById("cancel-add-btn");
+  const createTaskForm = document.getElementById("new-task-modal-window");
+
+  // Open modal
+  addTaskBtn.addEventListener("click", () => newTaskModal.showModal());
+
+  // Close modal
+  cancelAddBtn.addEventListener("click", () => newTaskModal.close());
+
+  // Handle form submission
+  createTaskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    addNewTask();
+  });
+}
